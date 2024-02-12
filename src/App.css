@@ -220,6 +220,8 @@ hr[role="separator"] {
   margin: 0;
   font-weight: 300;
   white-space: nowrap;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
 }
 
 .featured-card__title {
@@ -254,6 +256,7 @@ hr[role="separator"] {
 .featured-card__buttons>.icon-button {
   width: 50%;
   height: 2.75rem;
+  cursor: pointer;
 }
 
 .featured-card__buttons>.icon-button>img {
