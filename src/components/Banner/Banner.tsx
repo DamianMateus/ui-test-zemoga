@@ -1,4 +1,5 @@
 import React from 'react'
+import ListView from '../ListView/ListView'
 
 const Banner = () => {
   return (
@@ -22,7 +23,7 @@ const Banner = () => {
         </button>
       </aside>
       <main role="main">
-        {/*application content*/}
+        <ListView />
       </main>
       <aside className="banner banner-bottom" role="doc-tip" aria-label="Submit a name">
         <img

@@ -1,0 +1,563 @@
+.listItems {
+  width: 100%;
+}
+
+.listItems--header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.listItems--title {
+  font-family: Lato;
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 54px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #333333;
+}
+
+.select-view {
+  width: 173px;
+  height: 36px;
+  border: 1px solid #333333;
+  cursor: pointer;
+}
+
+.select-view option {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  max-height: 12rem;
+  min-height: 12rem;
+  height: 12rem;
+  margin-bottom: 2rem;
+}
+
+.listItem--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-photo {
+  width: 227px;
+  min-width: 227px;
+  max-width: 227px;
+  z-index: 1;
+  opacity: 100;
+}
+
+.listItem__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 170px;
+  min-height: 170px;
+  max-height: 170px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2rem;
+}
+
+.listItem__container--description {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, #888888 19.79%, #666666 50%, rgba(51, 51, 51, 0.6) 71.88%);
+  margin-left: -7rem;
+  padding-left: 10rem;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+}
+
+.listItem__container--description--name {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.listItem__container--description--text {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.listItem__container--buttons {
+  background: #848484;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.listItem__container--buttons--time {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: white;
+  padding: 10px;
+}
+
+.thumbsUp__container--buttons--row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbsDown__container--button {
+  background: #F9AD1D99;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  z-index: 3;
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbsUp__container--button {
+  background: #3CBBB499;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  z-index: 3;
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbsUp__container--button.selected,
+.thumbsDown__container--button.selected {
+  border: 2px solid #FFFFFF;
+}
+
+
+
+.thumbsDown__container--button.selected {
+  border: 2px solid #FFFFFF;
+}
+
+.thumbsUp__container--button--img,
+.thumbsDown__container--button--img {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  z-index: 3;
+}
+
+.listItem__container--buttons--vote {
+  width: 135px;
+  height: 45px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #353535;
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.listItem__container--buttons--vote.voted {
+  background-color: #525252;
+}
+
+.thumbsDown__container {
+  background: #F9AD1D99;
+  width: 45px;
+  height: 45px;
+  border: 2px;
+  position: absolute;
+  z-index: 3;
+}
+
+.thumbsUp__container {
+  background: #3CBBB499;
+  padding: 2px;
+  width: 45px;
+  height: 45px;
+  border: 2px;
+  position: absolute;
+  z-index: 3;
+}
+
+.thumbsDown__container--img,
+.thumbsUp__container--img {
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  z-index: 3;
+}
+
+.gauge-bar {
+  position: relative;
+  z-index: 10;
+  bottom: 72px;
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+}
+
+.gauge-bar--positive,
+.gauge-bar--negative {
+  width: 50%;
+}
+
+.gauge-bar--positive {
+  background: rgba(60, 187, 180, 0.6);
+  color: #FFFFFF;
+  align-items: center;
+  padding-left: 1rem;
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.gauge-bar--negative {
+  background: rgba(249, 173, 29, 0.6);
+  color: #FFFFFF;
+  align-items: flex-end;
+  padding-right: 1rem;
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.gauge-bar--positive--img,
+.gauge-bar--negative--img {
+  height: 22px;
+  min-height: 22px;
+  max-height: 22px;
+  margin-right: 1rem;
+}
+
+
+.grid-view .grid-items-container {
+  display: grid;
+  grid-template-columns: repeat(3, 348px);
+  gap: 20px;
+
+  .gridItem--card {
+    width: 348px;
+    height: 348px;
+  }
+
+  .gridItem__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .gridItem__container--description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    background: none;
+    width: 100%;
+  }
+
+  .gridItem__container--description--name {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    width: 278px;
+    height: 36px;
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0.5rem;
+  }
+
+  .gridItem__container--description--text {
+    width: 278px;
+    height: 36px;
+    margin: 0 auto;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0.3rem;
+  }
+
+  .gridItem__container--buttons {
+    width: 100%;
+    position: relative;
+    margin-top: 0rem;
+    height: 4.4rem;
+    min-height: 4.4rem;
+    max-height: 4.4rem
+  }
+
+  .gridItem__container--buttons--time {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: white;
+    margin-right: 3rem;
+  }
+
+  .thumbsUp__container--buttons--row {
+    position: relative;
+    display: inline-flex;
+  }
+
+
+  .gridItem__container--buttons--vote {
+    width: 135px;
+    height: 45px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #353535;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    margin-right: 1rem;
+    position: absolute;
+    left: 10rem;
+  }
+
+  .gridItem__container--buttons--vote.voted {
+    background-color: #525252;
+    top: -3px;
+  }
+
+  .gauge-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    gap: 0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    height: 36px;
+    max-height: 36px;
+    min-height: 36px;
+  }
+
+  .gauge-bar--positive {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+    height: 36px;
+    max-height: 36px;
+    min-height: 36px;
+
+    .gauge-bar--positive--img {
+      margin-right: 5px;
+    }
+  }
+
+  .gauge-bar--negative {
+    padding-right: 5px;
+    font-size: 16px;
+    padding-top: 5px;
+    height: 36px;
+    max-height: 36px;
+    min-height: 36px;
+
+    .gauge-bar--negative--img {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .listItems--title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .grid-view .grid-items-container {
+    display: grid;
+    grid-template-columns: repeat(2, 348px);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+
+  .gridItem__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.8rem;
+  }
+
+  .gridItem__container--buttons {
+    width: 100%;
+    position: relative;
+    margin-top: 0rem;
+    height: 4.4rem;
+    min-height: 4.4rem;
+    max-height: 4.4rem;
+    margin-left: 2rem;
+  }
+
+  .gridItem__container--buttons--time {
+    margin-right: 5rem !important;
+  }
+
+  .select-view {
+    width: 120px;
+    height: 30px;
+  }
+
+  .gauge-bar {
+    bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .listItems--title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .select-view {
+    display: none;
+  }
+
+  .grid-view {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .grid-view .grid-items-container {
+    grid-template-columns: none;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .grid-view .gridItem--card {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .grid-view .gridItem--card:first-child {
+    margin-left: 0;
+  }
+
+  .gridItem__container {
+    margin: 1rem;
+    padding: 0rem;
+  }
+
+  .thumbsDown__container {
+    position: relative;
+  }
+
+  .grid-view .gridItem--card {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .grid-view .gridItem--card {
+    margin-right: 2rem;
+  }
+
+  .gridItem__container--buttons {
+    margin-bottom: 1rem;
+  }
+
+  .gridItem__container--buttons--vote {
+    position: relative;
+    margin-left: 30px;
+  }
+
+  .thumbsUp__container {
+    position: relative;
+    z-index: 3;
+  }
+}
