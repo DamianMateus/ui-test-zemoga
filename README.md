@@ -13,11 +13,18 @@ Here's how you can run the project on your local machine:
 1. Clone this repository:
 
 git clone [https://github.com/DamianMateus/ui-test-zemoga.git]
+
 move into the folder
+
 1.Install dependencies using Node.js version 18.3.0:
+
   npm install
+
 2.Start the development server:
+
   npm start
+
 3.Open your browser and go to http://localhost:3000 to experience the app.
+
 
 ## Feel free to explore the code and functionalities, crafted with React, TypeScript, and pure CSS. Happy coding! 🚀
