@@ -1,4 +1,5 @@
 import React from 'react';
+import search from '../../assets/img/Search.svg'
 
 const Navbar = () => {
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
                 <form action="javascript:void(0)">
                   <input className="nav__search-input" aria-label="search" type="text" />
                   <button className="nav__search icon-button" type="submit">
-                    <img src="src/assets/img/search.svg" alt="search" />
+                    <img src={search} alt="search" />
                   </button>
                 </form>
               </li>
